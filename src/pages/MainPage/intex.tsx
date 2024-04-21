@@ -1,20 +1,11 @@
 import React from "react";
-import { SafeAreaView, StyleSheet } from "react-native";
 import { Welcome } from "../../components/welcome";
+import { Conteiner } from "./style";
 
 export function MainPage() {
   return (
-    <SafeAreaView style={style.conteiner}>
+    <Conteiner>
       <Welcome titule="React native Bare workflow with TypeScript" />
-    </SafeAreaView>
+    </Conteiner>
   );
 }
-
-const style = StyleSheet.create({
-  conteiner: {
-    flex: 1,
-    backgroundColor: "#333333",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

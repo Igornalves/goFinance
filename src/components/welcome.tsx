@@ -1,10 +1,8 @@
 import React from 'react';
 import {
  View,
- Text,
- StyleSheet
 } from 'react-native'
-// import { styles } from './styles'
+import { Titule } from '../pages/MainPage/style';
 
 interface props {
   titule: string
@@ -13,15 +11,9 @@ interface props {
 export function Welcome({titule}: props) {
   return (
     <View>
-       <Text style={style.text}>
+       <Titule>
           {titule}
-       </Text>
+       </Titule>
     </View>
   );
 }
-
-const style = StyleSheet.create({
-    text: {
-      color: "#fff"
-    }
-})
