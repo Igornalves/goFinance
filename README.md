@@ -31,3 +31,30 @@ npm install styled-components
 ```bash
 npm install @types/styled-components-react-native -D
 ```
+
+## Adcionando no projeto a Bibliotca de fonts de letra do Expo 
+
+```bash
+npm install expo-font @expo-google-fonts/<nome-da-fonte>
+```
+
+```bash
+npm install expo-app-loading => obsoleto
+```
+
+```bash
+npm install expo-splash-screen
+```
+
+
+## Adcionando uma biblioteca que ajuda com o ajusta de tamanha e pixes das telas 
+
+```bash
+npm install react-native-responsive-fontsize --save
+```
+
+
+
+
+
+

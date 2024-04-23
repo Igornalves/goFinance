@@ -1,11 +1,30 @@
 import React from "react";
-import { Welcome } from "../../components/welcome";
-import { Conteiner } from "./style";
+
+import { 
+  Conteiner,
+  Header,
+  UserWrapper,
+  UserInfo,
+  Photo,
+  User,
+  UserGreeting,
+  UserName
+} from "./style";
 
 export function MainPage() {
   return (
     <Conteiner>
-      <Welcome titule="React native Bare workflow with TypeScript" />
+      <Header>
+        <UserWrapper>
+          <UserInfo>
+            <Photo source={{uri:'https://avatars.githubusercontent.com/u/134658180?v=4'}}/>
+            <User>
+                <UserGreeting> Ola, </UserGreeting>
+                <UserName> Igor </UserName>
+            </User>
+          </UserInfo>
+        </UserWrapper>
+      </Header>
     </Conteiner>
   );
 }

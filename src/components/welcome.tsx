@@ -1,7 +1,4 @@
 import React from 'react';
-import {
- View,
-} from 'react-native'
 import { Titule } from '../pages/MainPage/style';
 
 interface props {
@@ -10,10 +7,8 @@ interface props {
 
 export function Welcome({titule}: props) {
   return (
-    <View>
        <Titule>
           {titule}
        </Titule>
-    </View>
   );
 }
