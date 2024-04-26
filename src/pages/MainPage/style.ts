@@ -2,6 +2,7 @@ import styled from 'styled-components/native'
 import theme from '../../global/styles/theme';
 import { Feather } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize'
+import { getStatusBarHeight } from 'react-native-iphone-x-helper'
 
 export const Conteiner = styled.SafeAreaView`
     flex: 1;
@@ -19,16 +20,18 @@ export const Header = styled.View`
     height: ${RFValue(278)}px;
     background-color: ${theme.colors.primary};
     justify-content: center;
-    align-items: center;
-`;
+    align-items: flex-start;
+    flex-direction: row;
+    `;
 
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
-    /* background-color: green; */
+    /* background-color: green;  */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: ${getStatusBarHeight(), RFValue(21)}px;
 `;
 
 export const UserInfo = styled.View`

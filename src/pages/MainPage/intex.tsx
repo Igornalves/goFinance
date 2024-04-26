@@ -12,6 +12,9 @@ import {
   Icon
 } from "./style";
 
+import { HighLigthCard } from "../../components/HighLigthCard/intex";
+import { HighLigthCards } from '../../components/HighLigthCard/style';
+
 export function MainPage() {
   return (
     <Conteiner>
@@ -27,6 +30,13 @@ export function MainPage() {
           <Icon name={'power'}/>
         </UserWrapper>
       </Header>
+
+      <HighLigthCards>
+        <HighLigthCard/>
+        <HighLigthCard/>
+        <HighLigthCard/>
+      </HighLigthCards>
+
     </Conteiner>
   );
 }

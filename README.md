@@ -52,6 +52,11 @@ npm install expo-splash-screen
 ```bash
 npm install react-native-responsive-fontsize --save
 ```
+## fazendo configs para o Iphone usando a biblioteca
+
+```bash
+npm install react-native-iphone-x-helper --save
+```
 
 
 

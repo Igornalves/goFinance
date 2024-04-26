@@ -26,7 +26,8 @@ export default function App() {
   if (!fontsLoaded) {
     return console.log('As fontes ainda estão carregando...');
   } else {
-    SplashScreen.hideAsync(); // Ocultar a tela de splash quando as fontes estiverem carregadas
+    // Ocultar a tela de splash quando as fontes estiverem carregadas
+    SplashScreen.hideAsync(); 
     console.log('As fontes ja foram completamente carragadas !!!');
   }
 
