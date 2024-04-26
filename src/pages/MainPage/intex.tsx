@@ -8,7 +8,8 @@ import {
   Photo,
   User,
   UserGreeting,
-  UserName
+  UserName,
+  Icon
 } from "./style";
 
 export function MainPage() {
@@ -23,6 +24,7 @@ export function MainPage() {
                 <UserName> Igor </UserName>
             </User>
           </UserInfo>
+          <Icon name={'power'}/>
         </UserWrapper>
       </Header>
     </Conteiner>

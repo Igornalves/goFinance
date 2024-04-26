@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { StatusBar } from "react-native";
 import { MainPage } from "./src/pages/MainPage/intex";
 import { ThemeProvider } from "styled-components";

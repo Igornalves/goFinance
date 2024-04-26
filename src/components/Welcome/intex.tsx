@@ -1,5 +1,5 @@
 import React from 'react';
-import { Titule } from '../pages/MainPage/style';
+import { Titule } from '../../pages/MainPage/style';
 
 interface props {
   titule: string
