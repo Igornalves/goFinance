@@ -45,17 +45,11 @@ export function MainPage() {
 
       <Transactions>
         <Title>Listagem </Title>
-        <TransationsList>
-          <TransactionCard 
-            date={date}
-          />
-          <TransactionCard 
-            date={date}
-          />
-          <TransactionCard 
-            date={date}
-          />
-        </TransationsList>
+        <TransationsList
+          data = {date}
+          showsVerticalScrollIndicator = {false}
+          renderItem = {({item}) => <TransactionCard date={item}/>}
+        />
       </Transactions>
     </Conteiner>
   );

@@ -16,7 +16,7 @@ import {
    total: 'dollar-sign'
  }
 
- interface dateCard {
+ export interface dateCard {
   type: 'up' | 'down' | 'total';
   title: string;
   amount: string;

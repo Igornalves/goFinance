@@ -1,13 +1,14 @@
 import styled, { DefaultTheme } from "styled-components/native";
 import { Feather } from '@expo/vector-icons';
 import theme from "../../global/styles/theme";
-import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
+import { getBottomSpace } from "react-native-iphone-x-helper";
 
 export const Conteiner = styled.View`
     background-color: ${theme.colors.shepe};
     border-radius: 5px;
     padding: 17px 24px;
-    margin-bottom: ${RFValue(11)}px;
+    margin-bottom: ${getBottomSpace() + RFValue(11)}px;
 `;
 
 export const Title = styled.Text` 
@@ -48,9 +49,6 @@ export const Data = styled.Text`
     color: ${theme.colors.text};
 `;
 
-export const TransationsList = styled.ScrollView.attrs({
-    horizontal: false,
-    showsVerticalScrollIndicator: false,
-})`
-    width: 100%;
+export const TransationsList = styled.FlatList`
+
 `;

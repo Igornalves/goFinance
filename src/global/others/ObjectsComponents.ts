@@ -1,11 +1,7 @@
-interface dateCard {
-    type: 'up' | 'down' | 'total';
-    title: string;
-    amount: string;
-    lastTransaction: string;
-}
+import { dateCard } from "../../components/HighLigthCard/intex";
 
-export const date = {
+export const date = [
+    {
     title: "Desenvolvimento de Site",
     data: "13/04/2024",
     category: {
@@ -13,7 +9,26 @@ export const date = {
         icon: 'dollar-sign'
     },
     amount: "R$ 12.000,00",
-};
+    },
+    {
+    title: "Desenvolvimento de Site",
+    data: "13/04/2024",
+    category: {
+        name: 'Vendas',
+        icon: 'dollar-sign'
+    },
+    amount: "R$ 12.000,00",
+    },
+    {
+    title: "Desenvolvimento de Site",
+    data: "13/04/2024",
+    category: {
+        name: 'Vendas',
+        icon: 'dollar-sign'
+    },
+    amount: "R$ 12.000,00",
+    },
+];
 
 export const dateCard1: dateCard = {
     type: "up",
