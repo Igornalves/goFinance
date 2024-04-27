@@ -32,9 +32,24 @@ export function MainPage() {
       </Header>
 
       <HighLigthCards>
-        <HighLigthCard/>
-        <HighLigthCard/>
-        <HighLigthCard/>
+        <HighLigthCard 
+          type="up" 
+          title="Entradas" 
+          amount="R$ 17.400,00" 
+          lastTransaction="Última entrada dia 13 de abril"
+        />
+        <HighLigthCard 
+          type="down" 
+          title="Saidas" 
+          amount="R$ 17.400,00" 
+          lastTransaction="Última entrada dia 13 de abril"
+        />
+        <HighLigthCard 
+          type="total" 
+          title="Total" 
+          amount="R$ 17.400,00" 
+          lastTransaction="Última entrada dia 13 de abril"
+        />
       </HighLigthCards>
 
     </Conteiner>

@@ -31,7 +31,7 @@ export const UserWrapper = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: ${getStatusBarHeight(), RFValue(21)}px;
+    margin-top: ${getStatusBarHeight(), RFValue(25)}px;
 `;
 
 export const UserInfo = styled.View`
