@@ -18,8 +18,8 @@ import { HighLigthCard } from "../../components/HighLigthCard/intex";
 import { HighLigthCards } from '../../components/HighLigthCard/style';
 import { TransactionCard } from "../../components/TransactionCard/intex";
 import { TransationsList } from "../../components/TransactionCard/style";
-import { date, dateCard1, dateCard2, dateCard3 } from "../../global/others/ObjectsComponents";
-
+import {DataListProps, ItemsProps} from "../../global/others/Interface";
+import { date, dateCard1, dateCard2, dateCard3 } from "../../global/others/Objects";
 
 export function MainPage() {
   return (
@@ -47,8 +47,8 @@ export function MainPage() {
         <Title>Listagem </Title>
         <TransationsList
           data = {date}
-          showsVerticalScrollIndicator = {false}
-          renderItem = {({item}) => <TransactionCard date={item}/>}
+          keyExtractor= {({ id }: DataListProps) => id}
+          renderItem = {({ item }:ItemsProps) => <TransactionCard date={item}/>}
         />
       </Transactions>
     </Conteiner>

@@ -3,10 +3,7 @@ import { Feather } from '@expo/vector-icons';
 import { RFValue, RFPercentage } from 'react-native-responsive-fontsize'
 import theme from "../../global/styles/theme";
 import { css } from "styled-components";
-
-interface TypeProps {
-    type: 'up' | 'down' | 'total';
-}
+import { TypeProps } from "../../global/others/Interface";
 
 export const Conteiner = styled.View`
     background-color: ${({ type }: TypeProps) => type === 'total' ? theme.colors.secundary: theme.colors.shepe};
@@ -15,7 +12,7 @@ export const Conteiner = styled.View`
     border-radius: 10px;
     padding: 19px 23px;
     margin-right: 16px;
-    padding-bottom: ${RFValue(36)}px;
+    padding-bottom: ${RFValue(34)}px;
 `;
 
 export const Header = styled.View`

@@ -9,28 +9,16 @@ import {
     CategoryName,
     Data
  } from './style';
+import { propsDate } from '../../global/others/Interface';
 
-interface CategoryProps {
-    name: string;
-    icon: string;
-};
-
-interface date {
-    title: string;
-    amount: string;
-    category: CategoryProps;
-    data: string; 
-}
-
-interface props {
-    date: date;
-};
-
-export function TransactionCard({date}:props) {
+export function TransactionCard({date}:propsDate) {
   return (
     <Conteiner>
         <Title>{date.title}</Title>
-        <Amount>{date.amount}</Amount>
+        <Amount type={date.type}>
+            { date.type === 'negativo' && "- " }
+            {date.amount}
+        </Amount>
         <Footer>
             <Category>
                 <Icon name= {date.category.icon} />

@@ -1,9 +1,17 @@
-import { dateCard } from "../../components/HighLigthCard/intex";
+import { DataListProps, dateCard } from "./Interface";
 
-export const date = [
+export const icon = {
+    up: 'arrow-up-circle',
+    down: 'arrow-down-circle',
+    total: 'dollar-sign'
+}
+
+export const date: DataListProps[] = [
     {
-    title: "Desenvolvimento de Site",
-    data: "13/04/2024",
+    id: '1',
+    type: 'positivo',
+    title: 'Desenvolvimento de Site',
+    data: "08/04/2024",
     category: {
         name: 'Vendas',
         icon: 'dollar-sign'
@@ -11,22 +19,26 @@ export const date = [
     amount: "R$ 12.000,00",
     },
     {
-    title: "Desenvolvimento de Site",
-    data: "13/04/2024",
+    id: '2',
+    type: 'negativo',
+    title: 'aluguel do apartamento',
+    data: "18/04/2024",
     category: {
-        name: 'Vendas',
-        icon: 'dollar-sign'
+        name: 'Casa',
+        icon: 'home'
     },
-    amount: "R$ 12.000,00",
+    amount: "R$ 1.200,00",
     },
     {
-    title: "Desenvolvimento de Site",
-    data: "13/04/2024",
+    id: '3',
+    type: 'negativo' ,
+    title: 'Hamburgueria Pizzy',
+    data: "10/04/2024",
     category: {
-        name: 'Vendas',
-        icon: 'dollar-sign'
+        name: 'Alimentacao',
+        icon: 'coffee'
     },
-    amount: "R$ 12.000,00",
+    amount: "R$ 15,00",
     },
 ];
 

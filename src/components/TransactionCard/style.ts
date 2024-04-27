@@ -3,12 +3,15 @@ import { Feather } from '@expo/vector-icons';
 import theme from "../../global/styles/theme";
 import { RFValue } from "react-native-responsive-fontsize";
 import { getBottomSpace } from "react-native-iphone-x-helper";
+import { TransactionsTypeProps } from "../../global/others/Interface";
+import { FlatList } from 'react-native';
+import { DataListProps } from '../../global/others/Interface';
 
 export const Conteiner = styled.View`
     background-color: ${theme.colors.shepe};
     border-radius: 5px;
-    padding: 17px 24px;
-    margin-bottom: ${getBottomSpace() + RFValue(11)}px;
+    padding: 16px 24px;
+    margin-bottom: ${getBottomSpace() + RFValue(14)}px;
 `;
 
 export const Title = styled.Text` 
@@ -18,6 +21,7 @@ export const Title = styled.Text`
 export const Amount = styled.Text`
     font-family: ${theme.fonts.regular};
     font-size: ${RFValue(20)}px;
+    color: ${({ type }: TransactionsTypeProps) => type === 'positivo' ? theme.colors.success : theme.colors.attention};
     margin-top: 2px;
 `;
 
@@ -49,6 +53,8 @@ export const Data = styled.Text`
     color: ${theme.colors.text};
 `;
 
-export const TransationsList = styled.FlatList`
+export const TransationsList = styled(FlatList as new () => FlatList<DataListProps>).attrs({
+    showsVerticalScrollIndicator: false
+})`
 
 `;
