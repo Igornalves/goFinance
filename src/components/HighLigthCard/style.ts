@@ -8,7 +8,7 @@ interface TypeProps {
     type: 'up' | 'down' | 'total';
 }
 
-export const Conteiner = styled.View<TypeProps>`
+export const Conteiner = styled.View`
     background-color: ${({ type }: TypeProps) => type === 'total' ? theme.colors.secundary: theme.colors.shepe};
     width: ${RFValue(278)}px;
     /* height: ${RFValue(200)}px; */
@@ -25,7 +25,16 @@ export const Header = styled.View`
 
 export const Titule = styled.Text`
     font-family: ${theme.fonts.regular};
-    font-size: ${RFValue(14)}px;
+    font-size: ${RFValue(17)}px;
+
+    ${({type}: TypeProps) => type === 'up' && css`
+        color: ${theme.colors.text_dark};
+    `};
+
+    ${({type}: TypeProps) => type === 'down' && css`
+        color: ${theme.colors.text_dark};
+    `}; 
+
     ${({type}: TypeProps) => type === 'total' && css`
         color: ${theme.colors.shepe};
     `};
@@ -48,21 +57,39 @@ export const Icon = styled(Feather)`
 `;
 
 export const Footer = styled.View`
-
 `;
 
 export const Amount = styled.Text`
     font-family: ${theme.fonts.medium};
     font-size: ${RFValue(32)}px;
+    
+    ${({type}: TypeProps) => type === 'up' && css`
+        color: ${theme.colors.text_dark};
+    `};
+
+    ${({type}: TypeProps) => type === 'down' && css`
+        color: ${theme.colors.text_dark};
+    `}; 
+
     ${({type}: TypeProps) => type === 'total' && css`
         color: ${theme.colors.shepe};
     `};
+
     margin-top: 38px;
 `;
 
 export const LastTransaction = styled.Text`
     font-size: ${RFValue(12)}px;
     font-family: ${theme.fonts.regular};
+    
+    ${({type}: TypeProps) => type === 'up' && css`
+        color: ${theme.colors.text};
+    `};
+
+    ${({type}: TypeProps) => type === 'down' && css`
+        color: ${theme.colors.text};
+    `}; 
+
     ${({type}: TypeProps) => type === 'total' && css`
         color: ${theme.colors.shepe};
     `};

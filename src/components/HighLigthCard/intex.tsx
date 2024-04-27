@@ -10,29 +10,34 @@ import {
     LastTransaction,
  } from './style';
 
- interface Props {
+ const icon = {
+   up: 'arrow-up-circle',
+   down: 'arrow-down-circle',
+   total: 'dollar-sign'
+ }
+
+ interface dateCard {
   type: 'up' | 'down' | 'total';
   title: string;
   amount: string;
   lastTransaction: string;
  }
+ 
+ interface Props {
+  dateCard: dateCard,
+ }
 
-const icon = {
-  up: 'arrow-up-circle',
-  down: 'arrow-down-circle',
-  total: 'dollar-sign'
-}
 
-export function HighLigthCard({ type, title, amount, lastTransaction } : Props) {
+export function HighLigthCard({ dateCard } : Props) {
   return (
-    <Conteiner type={type}>
+    <Conteiner type={dateCard.type}>
         <Header>
-            <Titule type={type}> {title} </Titule>
-            <Icon name={icon[type]} type={type}/>
+            <Titule type={dateCard.type}>{dateCard.title}</Titule>
+            <Icon name={icon[dateCard.type]} type={dateCard.type}/>
         </Header>
         <Footer>
-            <Amount type={type}> {amount} </Amount>
-            <LastTransaction type={type}> {lastTransaction} </LastTransaction>
+            <Amount type={dateCard.type}>{dateCard.amount}</Amount>
+            <LastTransaction type={dateCard.type}>{dateCard.lastTransaction}</LastTransaction>
         </Footer>
     </Conteiner>
   );

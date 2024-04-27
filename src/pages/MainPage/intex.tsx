@@ -9,11 +9,17 @@ import {
   User,
   UserGreeting,
   UserName,
-  Icon
+  Icon,
+  Transactions,
+  Title
 } from "./style";
 
 import { HighLigthCard } from "../../components/HighLigthCard/intex";
 import { HighLigthCards } from '../../components/HighLigthCard/style';
+import { TransactionCard } from "../../components/TransactionCard/intex";
+import { TransationsList } from "../../components/TransactionCard/style";
+import { date, dateCard1, dateCard2, dateCard3 } from "../../global/others/ObjectsComponents";
+
 
 export function MainPage() {
   return (
@@ -32,26 +38,25 @@ export function MainPage() {
       </Header>
 
       <HighLigthCards>
-        <HighLigthCard 
-          type="up" 
-          title="Entradas" 
-          amount="R$ 17.400,00" 
-          lastTransaction="Última entrada dia 13 de abril"
-        />
-        <HighLigthCard 
-          type="down" 
-          title="Saidas" 
-          amount="R$ 17.400,00" 
-          lastTransaction="Última entrada dia 13 de abril"
-        />
-        <HighLigthCard 
-          type="total" 
-          title="Total" 
-          amount="R$ 17.400,00" 
-          lastTransaction="Última entrada dia 13 de abril"
-        />
+        <HighLigthCard dateCard={dateCard1}/>
+        <HighLigthCard dateCard={dateCard2}/>
+        <HighLigthCard dateCard={dateCard3}/>
       </HighLigthCards>
 
+      <Transactions>
+        <Title>Listagem </Title>
+        <TransationsList>
+          <TransactionCard 
+            date={date}
+          />
+          <TransactionCard 
+            date={date}
+          />
+          <TransactionCard 
+            date={date}
+          />
+        </TransationsList>
+      </Transactions>
     </Conteiner>
   );
 }

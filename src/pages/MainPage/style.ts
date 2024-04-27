@@ -22,12 +22,12 @@ export const Header = styled.View`
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
-    `;
+`;
 
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
-    /* background-color: green;  */
+    /* background-color: green; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -68,3 +68,18 @@ export const Icon = styled(Feather)`
     font-size: ${RFValue(24)}px;
     padding-right: 24px;
 `;
+
+export const Transactions= styled.View`
+    flex: 1%;
+    padding: 0 24px;
+    /* background-color: red; */
+    margin-top: ${RFPercentage(11)}px;
+`;
+
+
+export const Title= styled.Text`
+    font-size: ${RFValue(18)}px;
+    font-family: ${theme.fonts.regular};
+    margin-bottom: 16px;
+`;
+
