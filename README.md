@@ -42,6 +42,10 @@ npm install expo-font @expo-google-fonts/<nome-da-fonte>
 npm install expo-app-loading => obsoleto
 ```
 
+## ferramentas e serviços para construir aplicativos móveis com React Native.
+
+#### é uma ferramenta essencial para configurar e personalizar a tela de apresentação de aplicativos móveis Expo, permitindo criar uma experiência de usuário memorável e profissional desde o primeiro momento em que o aplicativo é aberto.
+
 ```bash
 npm install expo-splash-screen
 ```
