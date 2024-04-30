@@ -1,3 +1,8 @@
+import { TouchableOpacityProps } from "react-native";
+
+export interface ButtomProps extends TouchableOpacityProps{
+    titule: string
+}
 
 export interface dateCard {
     type: 'up' | 'down' | 'total';

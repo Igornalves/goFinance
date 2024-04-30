@@ -1,6 +1,6 @@
 import React from "react";
 import { StatusBar } from "react-native";
-import { MainPage } from "./src/pages/MainPage/intex";
+import { Register } from "./src/pages/PageForms/intex";
 import { ThemeProvider } from "styled-components";
 import theme from "./src/global/styles/theme";
 import * as SplashScreen from 'expo-splash-screen';
@@ -34,7 +34,7 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <MainPage />
+        <Register/>
       </ThemeProvider>
       <StatusBar barStyle={"default"} />
     </>
