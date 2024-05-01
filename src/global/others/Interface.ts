@@ -1,5 +1,14 @@
 import { TouchableOpacityProps } from "react-native";
 
+export interface TypeIconsProps {
+    type: 'up' | 'down';
+}
+
+export interface TransactionTypeButtomProps extends TouchableOpacityProps {
+    title: string;
+    type: 'up' | 'down';
+}
+
 export interface ButtomProps extends TouchableOpacityProps{
     titule: string
 }

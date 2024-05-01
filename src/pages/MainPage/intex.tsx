@@ -11,7 +11,8 @@ import {
   UserName,
   Icon,
   Transactions,
-  Title
+  Title,
+  LogoutButton
 } from "./style";
 
 import { HighLigthCard } from "../../components/HighLigthCard/intex";
@@ -33,7 +34,11 @@ export function MainPage() {
                 <UserName> Igor </UserName>
             </User>
           </UserInfo>
-          <Icon name={'power'}/>
+
+          <LogoutButton onPress={() => {}}>
+            <Icon name={'power'}/>
+          </LogoutButton>
+          
         </UserWrapper>
       </Header>
 

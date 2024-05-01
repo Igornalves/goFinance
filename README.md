@@ -62,6 +62,24 @@ npm install react-native-responsive-fontsize --save
 npm install react-native-iphone-x-helper --save
 ```
 
+## React Navegation no Aplicacao
+
+```bash
+npm install @react-navigation/native
+```
+
+```bash
+npx expo install react-native-screens react-native-safe-area-context
+```
+
+```bash
+npm install @react-navigation/bottom-tabs
+```
+
+```bash
+npm install --save react-native-gesture-handler
+```
+
 
 
 

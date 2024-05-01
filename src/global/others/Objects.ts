@@ -1,8 +1,13 @@
 import { DataListProps, dateCard } from "./Interface";
 
-export const icon = {
+export const TransactionTypeButtomIcon = {
     up: 'arrow-up-circle',
     down: 'arrow-down-circle',
+}
+
+export const icon = {
+    up: 'arrow-up-circle',
+    down: 'arrow-up-circle',
     total: 'dollar-sign'
 }
 
