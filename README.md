@@ -80,7 +80,11 @@ npm install @react-navigation/bottom-tabs
 npm install --save react-native-gesture-handler
 ```
 
+## Rodar o Expo no Web 
 
+```bash
+npx expo install react-native-web @expo/metro-runtime
+```
 
 
 

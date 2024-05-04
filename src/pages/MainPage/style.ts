@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
 import theme from '../../global/styles/theme';
 import { Feather } from '@expo/vector-icons';
+import { Platform } from 'react-native'
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { BorderlessButton } from 'react-native-gesture-handler';
@@ -18,8 +19,8 @@ export const Titule = styled.Text`
 `;
 
 export const Header = styled.View`
-    width: ${RFPercentage(13)}%;
-    height: ${RFValue(278)}px;
+    width: ${RFPercentage(14)}%;
+    height: ${Platform.OS === 'android' ? 315 : 250}px;
     background-color: ${theme.colors.primary};
     justify-content: center;
     align-items: flex-start;
@@ -73,7 +74,7 @@ export const LogoutButton = styled(BorderlessButton)`
 export const Icon = styled(Feather)`
     color: ${theme.colors.secundary};
     font-size: ${RFValue(24)}px;
-    padding-right: 24px;
+    padding-right: ${Platform.OS === 'android' ? 50 : 25}px;
 `;
 
 export const Transactions = styled.View`
